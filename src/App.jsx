@@ -23,13 +23,14 @@ function App() {
     }
     
   }, [])
+
+  useEffect(() => {
+  localStorage.setItem("Todo", JSON.stringify(Arr));
+}, [Arr]);
+
   
 
 
-  const save=()=>{
-    localStorage.setItem("Todo",JSON.stringify(Arr))
-
-  }
 
 
   const edit = (e) => {
@@ -45,7 +46,7 @@ function App() {
 
     // }
     setTodo(e)
-    save()
+    
 
 
 
@@ -55,7 +56,7 @@ function App() {
   const deletee = (e) => {
     console.log(Arr)
     setArr(Arr.filter(todo => todo.id !== e));
-    save()
+    
 
 
 
@@ -85,7 +86,7 @@ function App() {
       setTemp("")
 
     }
-    save()
+   
 
 
 
@@ -94,7 +95,7 @@ function App() {
 
   const change = (e) => {
     setTodo(e.target.value)
-    save()
+
 
 
   }
@@ -112,7 +113,7 @@ function App() {
     u[i].iscompleted = !u[i].iscompleted;
     setArr(u)
     console.log(Arr)
-    save()
+  
 
   }
 
