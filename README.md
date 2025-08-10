@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/TANISHK24581/PLAN-TASK/refs/heads/main/src/components/logo1.svg" alt="PlanTrack Logo" width="200"/>
+  <img src="https://raw.githubusercontent.com/TANISHK24581/PLAN-TRACK/refs/heads/main/src/components/logo1.svg" alt="PlanTrack Logo" width="200"/>
 </p>
+
 
 # 📅 PlanTrack  
 **_Plan, Track, and Complete_**  
